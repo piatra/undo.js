@@ -14,3 +14,4 @@ undo.init({
 });
 ```
 You initialise it passing in the type of storage permanent/temporary the amout of space you need and the DOM element to watch.
+You can clone the repository and play around in the index.html
