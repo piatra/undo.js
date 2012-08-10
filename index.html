@@ -1,0 +1,45 @@
+<!doctype html public>
+<html>
+<head>
+	<title>undo.js</title>
+
+	<style type="text/css">
+
+	body {
+		padding:100px;
+		background: steelblue;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	#snippet {
+		width:400px;
+		height:200px;
+		border:1px solid #fff;
+		padding:10px;
+		border-radius:10px;
+	}
+
+	</style>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<h1>undo.js</h1>
+	<!-- <textarea id="snippet"></textarea> -->
+	<div id="snippet" contentEditable>asdasasd</div>
+	<ul></ul>
+
+	<script src="script.js"></script>
+	<script>
+
+		var snippet = document.querySelector('#snippet');
+
+		undo.init({
+			'type' : 'permanent',
+			'size' : 5*1024*1024,
+			'watch' : snippet
+		});
+
+	</script>
+</body>
+</html>
